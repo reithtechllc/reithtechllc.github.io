@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reith Technology LLC</title>
+  <meta name="description" content="Reith Technology LLC — contract electrical engineering, embedded design, software and mobile app development for iPhone, iPad, and Mac. Fort Collins, Colorado.">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-alt: #f5f6f8;
+      --text: #1d1d1f;
+      --muted: #5f6368;
+      --accent: #0a5cad;
+      --border: #e2e4e8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111214;
+        --bg-alt: #1a1c1f;
+        --text: #f2f2f4;
+        --muted: #a4a8ae;
+        --accent: #6aaef5;
+        --border: #2c2f34;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+    header { border-bottom: 1px solid var(--border); }
+    header .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-top: 18px; padding-bottom: 18px; }
+    .brand { font-weight: 700; font-size: 1.1rem; color: var(--text); text-decoration: none; }
+    nav a { color: var(--muted); text-decoration: none; margin-left: 18px; font-size: 0.95rem; }
+    nav a:first-child { margin-left: 0; }
+    nav a:hover { color: var(--accent); }
+    .hero { padding: 72px 0 56px; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.15; margin: 0 0 14px; }
+    .hero p { font-size: 1.15rem; color: var(--muted); margin: 0; max-width: 640px; }
+    section { padding: 48px 0; border-top: 1px solid var(--border); }
+    section.alt { background: var(--bg-alt); }
+    h2 { font-size: 1.5rem; margin: 0 0 18px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+    .card { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+    .card h3 { margin: 0 0 8px; font-size: 1.05rem; }
+    .card p { margin: 0; color: var(--muted); font-size: 0.97rem; }
+    dl { display: grid; grid-template-columns: 110px 1fr; gap: 10px 16px; margin: 0; }
+    dt { font-weight: 600; }
+    dd { margin: 0; }
+    a { color: var(--accent); }
+    footer { border-top: 1px solid var(--border); padding: 28px 0; color: var(--muted); font-size: 0.9rem; }
+    @media (max-width: 520px) {
+      dl { grid-template-columns: 1fr; gap: 2px; }
+      dd { margin-bottom: 12px; }
+      nav a { margin-left: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="#">Reith Technology LLC</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#support">Support &amp; Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero wrap">
+      <h1>Reith Technology LLC</h1>
+      <p>Contract electrical engineering, embedded design, software and mobile app development.</p>
+    </div>
+
+    <section id="about" class="alt">
+      <div class="wrap">
+        <h2>About</h2>
+        <p>Reith Technology LLC is a software and engineering company based in Fort Collins, Colorado. We build apps and tools for iPhone, iPad, and Mac, and provide contract embedded electrical engineering design, from circuit and board-level hardware through the firmware and software that runs on it.</p>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <h2>Services</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Apps for Apple Platforms</h3>
+            <p>Native apps and tools for iPhone, iPad, and Mac.</p>
+          </div>
+          <div class="card">
+            <h3>Embedded Design</h3>
+            <p>Embedded electrical engineering design: hardware, firmware, and microcontroller-based systems.</p>
+          </div>
+          <div class="card">
+            <h3>Contract Engineering</h3>
+            <p>Contract electrical engineering and software development for your projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="alt">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <dl>
+          <dt>Address</dt>
+          <dd>720 Roma Valley Dr<br>Fort Collins, CO 80525-6745<br>United States</dd>
+          <dt>Phone</dt>
+          <dd><a href="tel:+19704024135">(970) 402-4135</a></dd>
+          <dt>Email</dt>
+          <dd><a href="mailto:pfmahoney@mailbox.org">pfmahoney@mailbox.org</a></dd>
+          <dt>Hours</dt>
+          <dd>Monday–Friday, 9:00 a.m.–5:00 p.m. Mountain Time</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="support">
+      <div class="wrap">
+        <h2>Support &amp; Privacy</h2>
+        <p>For help with any of our apps, email us at <a href="mailto:pfmahoney@mailbox.org">pfmahoney@mailbox.org</a>.</p>
+        <p id="privacy">We do not sell personal information. Any data our apps collect is used only to provide their features.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Reith Technology LLC. All rights reserved.</div>
+  </footer>
+</body>
+</html>
